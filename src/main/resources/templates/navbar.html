@@ -1,0 +1,45 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="navbar">
+<style>
+.bg-nav-orange{
+	background: #FFE0B2;
+}
+.bg-nav-yellow{
+	background: #FFD54F;
+}
+.bg-nav-green{
+	background: #DCEDC8;
+}
+</style>
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-nav-orange border-bottom box-shadow mb-3 p-0">
+    <div class="container p-0">
+        <a class="navbar-brand" href="./">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between bg-nav-orange">
+            <ul class="navbar-nav flex-grow-1">
+                
+            </ul>
+            <ul class="navbar-nav bg-nav-orange">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="javascript:;" onclick="sign_in()">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<form style="text-align:center;" action="/msal4jsample/secure/aad" id="frm-sign-in" class="d-none">
+    <input type="submit" value="Login" class="btn btn-primary">
+</form>
+
+<script>
+    function sign_in(){
+        $("#frm-sign-in").submit()
+    }
+</script>
+
+</div>
+</html>

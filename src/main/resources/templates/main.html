@@ -1,0 +1,50 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="main">
+
+<style>
+	.bg-content-blue{
+		background: #BBDEFB;
+	}
+	.bg-content-green{
+		background: #56c05b;
+	}
+</style>
+
+<div class="mb-5">
+    <h6 class="display-6">You are accessing Profession page</h6>
+    <h6 class="display-6">Your role in: </h6>
+    <h6 class="display-6">You have accessing in Profession below</h6>
+    <h6 class="display-6">You have NO-ACCESS to Profession data</h6>
+</div>
+
+<div class="card card-body text-center">
+    <p>This is special page only visible to AdminRole</p>
+    <p>Only AdminRole can access this page</p>
+</div>
+
+<div class="row mt-3" id="developer">
+    <div class="col">
+        <div class="card bg-content-blue text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Programming</h5>
+                <p>NET, Java, Python, Javascript</p>
+                <a href="#" class="text-sm stretched-link">Go</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col">
+        <div class="card bg-content-green text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Infrastructure Code</h5>
+                <p>Terraform, Ansible, Chef, Puppet</p>
+                <a href="#" class="text-sm stretched-link">Go</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
